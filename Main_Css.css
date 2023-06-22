@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #795c34 #ffffff;
+
+}
+body {
+     background-color: #f5f5dc;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #795c34;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+.container{
+    width: 100%;
+    min-height: 500px;
+    background-color: #f5f5dc;
+
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+    background-color: #795c34;
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.navItems{
+     display: flex;
+}
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navItems li a{
+    font-size: 25px;
+    color: #ffffff;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+     transition: all 0.3s ease 0s;
+}
+.navItems li a:hover{
+    color: #9a7b4f;
+
+}
+.links a{
+    font-size: 30px;
+    color: #ffffff;
+    margin: 25px 10px;
+}
+.wrapper{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 100%
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.cols{
+    width: 50%;
+}
+.topline{
+     display: block;
+     position: relative;
+     font-size:30px;
+     letter-spacing: 5px;
+     color: #795c34;
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #9a7b4f;
+}
+h1{
+    display: block;
+    font-size: 100px;
+    font-weight: 900;
+    color:  #795c34;
+}
+.mutltitext{
+    color: #000000;
+    text-transform: capitalize;
+}
+p{
+    display: block;
+    width: 90%;
+    font-size: 20px;
+    color: #9a7b4f;
+}
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color:  #795c34;
+    padding: 4px 7px;
+    margin: 20px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+button:hover{
+    background-color:  #9a7b4f;
+}
+.title {
+  text-align: center;
+}
+
+.title img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+article{
+
+   background-color: #f5f5dc;
+
+     color: #3F3F3F;
+     margin-bottom: 40px;
+     padding-bottom: 10px;
+}
+.content h2{
+     color: #795c34;
+}
+
+.indented-text {
+  text-indent: 20px;
+}
+.list b{
+    color: #795c34;
+}
+
+.article .content {
+   background-color: #f5f5dc;
+}
+
+article .gallery_content {
+  padding: 40px 100px;
+  text-align: left;
+    background-color: #f5f5dc;
+}
+.gallery_content p{
+    text-align: center;
+    font-size: 20px;
+      background-color: #f5f5dc;
+
+}
+.gallery_content img {
+    display: center;
+    margin: 10 auto;
+    width: 500px;
+    height: 650px;
+}
+.main {
+    font-size: 30px;
+    color: #9a7b4f;
+    text-align: center;
+}
+.main p{
+    font-size: 15px;
+    color: #000;
+    margin: 20px;
+    text-align: justify;
+}
+hr {
+  color: #000;
+  height: 2px;
+  margin: 10px 0;
+}
+
+
+img {
+  margin: 10px;
+  max-width: 100%;
+}
+
+article .content {
+  padding: 40px 100px;
+  text-align: left;
+ background-color: #f5f5dc;
+}
+
+.content p{
+    text-align: center;
+    font-size: 20px;
+
+   background-color: #f5f5dc;
+
+}
+
+@media (max-width: 767px) {
+  article .content {
+    padding: 50px 50px;
+   background-color: #f5f5dc;
+}
+
+article .gallery_content {
+  padding: 40px 100px;
+  text-align: left;
+  background-color: #f5f5dc;
+}
+.gallery_content p{
+    text-align: center;
+    font-size: 20px;
+      background-color: #f5f5dc;
+
+  }
+}
+
+@media (max-width: 480px) {
+  article.single-post .content {
+    padding: 30px;
+  }
+}
+
+article .content p {
+  font-size: 16px;
+   background-color: #f5f5dc;
+  text-align: justify;
+
+}
+
+article .content ol {
+  float: left;
+  text-align: justify;
+  font-size: 16px;
+  list-style-type: circle;
+
+   background-color: #f5f5dc;
+
+}
+@media (max-width: 767px) {
+.note {
+    padding: 50px 50px;
+   background-color: #f5f5dc;
+}
+.list {
+  list-style-type: disc;
+  padding-left: 20px;
+   background-color: #f5f5dc;
+}
+
+.list li {
+  margin-bottom: 10px;
+
+   background-color: #f5f5dc;
+}
+
